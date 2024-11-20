@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="table-header">
+    <h1>Upcoming conferences</h1>
+  </div> 
+  <div class="row">
+    <div class="col-8">
+      <div class="content-Wrapper">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Starts</th>
+              <th scope="col">Ends</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let c of conferencias">
+              <td>
+                <dd>{{c.id}}</dd>
+              </td>
+              <td>
+                <dd>{{c.name}}</dd>
+              </td>
+              <td>
+                <dd>{{c.starts}}</dd>
+              </td>
+              <td>
+                <dd>{{c.ends}}</dd>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div>
+          <p>Upcoming Conferences: {{ getUpcoming}}</p>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
